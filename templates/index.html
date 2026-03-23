@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helseboliger — Invester i Norges voksende helseboligmarked</title>
+  <meta name="description" content="Helseboliger tilbyr institusjonelle investorer eksponering mot det norske helseboligmarkedet med langsiktige leiekontrakter og forutsigbar avkastning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">Helseboliger<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#markedet">Markedet</a></li>
+      <li><a href="#investering">Investeringen</a></li>
+      <li><a href="#leietaker">Leietaker</a></li>
+      <li><a href="#om">Om oss</a></li>
+      <li><a href="#kontakt" class="nav-cta">Bli investor</a></li>
+    </ul>
+    <button class="nav-burger" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#markedet" onclick="toggleMenu()">Markedet</a>
+    <a href="#investering" onclick="toggleMenu()">Investeringen</a>
+    <a href="#leietaker" onclick="toggleMenu()">Leietaker</a>
+    <a href="#om" onclick="toggleMenu()">Om oss</a>
+    <a href="#kontakt" class="mobile-cta" onclick="toggleMenu()">Bli investor</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-tag">Privat kapitalmarked · Eiendom · Helse</div>
+    <h1>Norges voksende<br><span class="gold">helseboligmarked</span></h1>
+    <p class="hero-sub">Langsiktige leiekontrakter med offentlig finansierte helseforetak. Forutsigbar, KPI-regulert avkastning i et marked med strukturell underdekning.</p>
+    <div class="hero-stats">
+      <div class="hstat">
+        <span class="hstat-num">7,2%</span>
+        <span class="hstat-label">Brutto yield</span>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <span class="hstat-num">1,21x</span>
+        <span class="hstat-label">DSCR</span>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <span class="hstat-num">6,11%</span>
+        <span class="hstat-label">IRR</span>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <span class="hstat-num">8%</span>
+        <span class="hstat-label">Pref. avkastning p.a.</span>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#kontakt" class="btn-primary">Be om investorpakke</a>
+      <a href="#investering" class="btn-ghost">Se nøkkeltall →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">↓</div>
+</section>
+
+<!-- MARKEDET -->
+<section class="section section-light" id="markedet">
+  <div class="container">
+    <div class="section-label">Markedsgrunnlag</div>
+    <h2>Et marked med strukturell<br>vekst og underdekning</h2>
+    <p class="section-sub">Demografiske trender og politisk prioritering gir helseboligmarkedet en unik posisjon med forutsigbar etterspørselsvekst i tiår fremover.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-num">370 000+</div>
+        <div class="stat-label">Mottakere av helsetjenester i dag</div>
+        <div class="stat-sub">Vokser til 400 000+ innen 2040</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <div class="stat-num">170 mrd</div>
+        <div class="stat-label">NOK i årlige helseutgifter</div>
+        <div class="stat-sub">Staten og kommunene bærer majoriteten</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📈</div>
+        <div class="stat-num">8–10%</div>
+        <div class="stat-label">Årlig vekst — privat sektor</div>
+        <div class="stat-sub">Privat andel passerer 20% i dag</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🏠</div>
+        <div class="stat-num">15 000+</div>
+        <div class="stat-label">Enheter i kapasitetsunderskudd</div>
+        <div class="stat-sub">Estimert behov innen 2030</div>
+      </div>
+    </div>
+
+    <div class="market-drivers">
+      <h3>Strukturelle drivere</h3>
+      <div class="drivers-grid">
+        <div class="driver">
+          <div class="driver-num">01</div>
+          <div>
+            <strong>Demografisk press</strong>
+            <p>Antall nordmenn over 80 år dobles fra 240 000 i dag til 400 000+ innen 2040. Kommunene kan ikke bygge seg ut av dette alene.</p>
+          </div>
+        </div>
+        <div class="driver">
+          <div class="driver-num">02</div>
+          <div>
+            <strong>Privatisering av omsorg</strong>
+            <p>Politisk konsensus om økt privat leveranse av helsetjenester. Offentlig finansiering, privat drift — gir trygg betalingsevne hos leietakere.</p>
+          </div>
+        </div>
+        <div class="driver">
+          <div class="driver-num">03</div>
+          <div>
+            <strong>Mangel på spesialtilpassede bygg</strong>
+            <p>Eksisterende bygningsmasse er ikke tilpasset moderne helsedrift. Nybygg og ombygging gir en premium for egnede lokaler.</p>
+          </div>
+        </div>
+        <div class="driver">
+          <div class="driver-num">04</div>
+          <div>
+            <strong>Lange leiekontrakter</strong>
+            <p>Helseforetak inngår 10–15 årige kontrakter. Høye oppstartskostnader gjør at leietakere sjelden flytter — gir institusjonell stabilitet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTERING -->
+<section class="section section-dark" id="investering">
+  <div class="container">
+    <div class="section-label light">Investeringscase</div>
+    <h2 class="light">Forutsigbar avkastning.<br>Institusjonell kvalitet.</h2>
+    <p class="section-sub light">Første prosjekt er et helsebygg med Auris Helse AS som leietaker. Alle nøkkeltall er basert på signert leiekontrakt og uavhengig verdivurdering.</p>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Total anskaffelseskost</div>
+        <div class="kpi-value">5 225 000</div>
+        <div class="kpi-unit">NOK</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Egenkapital</div>
+        <div class="kpi-value">1 567 500</div>
+        <div class="kpi-unit">NOK · 30%</div>
+      </div>
+      <div class="kpi-card kpi-highlight">
+        <div class="kpi-label">NOI År 1</div>
+        <div class="kpi-value">345 000</div>
+        <div class="kpi-unit">NOK</div>
+      </div>
+      <div class="kpi-card kpi-highlight">
+        <div class="kpi-label">Brutto yield</div>
+        <div class="kpi-value">7,2%</div>
+        <div class="kpi-unit">p.a.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">DSCR</div>
+        <div class="kpi-value">1,21x</div>
+        <div class="kpi-unit">Betjeningsevne</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">IRR</div>
+        <div class="kpi-value">6,11%</div>
+        <div class="kpi-unit">Prosjektert</div>
+      </div>
+      <div class="kpi-card kpi-highlight">
+        <div class="kpi-label">Pref. avkastning</div>
+        <div class="kpi-value">8%</div>
+        <div class="kpi-unit">p.a. til investorer</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Carry</div>
+        <div class="kpi-value">30%</div>
+        <div class="kpi-unit">Over hurdle 8%</div>
+      </div>
+    </div>
+
+    <div class="lease-terms">
+      <h3 class="light">Leievilkår</h3>
+      <div class="terms-grid">
+        <div class="term">
+          <span class="term-label">Månedlig leie</span>
+          <span class="term-val">30 000 kr/mnd</span>
+        </div>
+        <div class="term">
+          <span class="term-label">Kontraktslengde</span>
+          <span class="term-val">10 år (indikert)</span>
+        </div>
+        <div class="term">
+          <span class="term-label">KPI-regulering</span>
+          <span class="term-val">100% — årlig</span>
+        </div>
+        <div class="term">
+          <span class="term-label">Oppsigelsestid</span>
+          <span class="term-val">6 måneder</span>
+        </div>
+        <div class="term">
+          <span class="term-label">ESG / Bærekraft</span>
+          <span class="term-val">Miljøfyrtårn-sertifisert</span>
+        </div>
+        <div class="term">
+          <span class="term-label">Betalingsevne</span>
+          <span class="term-val">Offentlig finansiert drift</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEIETAKER -->
+<section class="section section-light" id="leietaker">
+  <div class="container">
+    <div class="section-label">Leietaker</div>
+    <h2>Auris Helse AS</h2>
+    <p class="section-sub">En etablert aktør i det norske private helsemarkedet, med offentlig finansiert drift og dokumentert driftshistorikk.</p>
+
+    <div class="tenant-block">
+      <div class="tenant-info">
+        <div class="tenant-tag">Helseforetak · Privat drift · Offentlig finansiering</div>
+        <p>Auris Helse AS driver spesialiserte helsetjenester i Norge. Som leietaker representerer selskapet en institusjonell motpart med stabil, offentlig finansiert inntektsstrøm — en av de sikreste betalerprofilene i det norske næringslivet.</p>
+        <ul class="tenant-points">
+          <li>✓ Offentlig finansiert — kommunal og statlig oppdragsgiver</li>
+          <li>✓ Langsiktig driftsmodell — høye innflyttingskostnader gir lav frafallsrisiko</li>
+          <li>✓ Miljøfyrtårn-sertifisert — ESG-kompatibel leietaker</li>
+          <li>✓ 100% KPI-regulert leie — inflasjonsbeskyttet avkastning</li>
+          <li>✓ 10-årig kontraktsramme — forutsigbarhet for investor</li>
+        </ul>
+        <div class="dd-status">
+          <strong>Due Diligence status</strong>
+          <div class="dd-items">
+            <span class="dd-done">✓ Leiekontrakt gjennomgått</span>
+            <span class="dd-done">✓ Finansregnskap verifisert</span>
+            <span class="dd-done">✓ Driftstillatelse bekreftet</span>
+            <span class="dd-open">⟳ Teknisk rapport — pågår</span>
+          </div>
+        </div>
+      </div>
+      <div class="tenant-card">
+        <div class="tc-header">Leietakerprofil</div>
+        <div class="tc-row"><span>Selskap</span><span>Auris Helse AS</span></div>
+        <div class="tc-row"><span>Sektor</span><span>Privat helse</span></div>
+        <div class="tc-row"><span>Finansiering</span><span>Offentlig</span></div>
+        <div class="tc-row"><span>Kontraktsleie</span><span>360 000 kr/år</span></div>
+        <div class="tc-row"><span>Regulering</span><span>100% KPI</span></div>
+        <div class="tc-row"><span>Kontraktslengde</span><span>10 år</span></div>
+        <div class="tc-row"><span>ESG</span><span>Miljøfyrtårn</span></div>
+        <div class="tc-footer">Offentlig finansiert betalingsevne</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OM -->
+<section class="section section-mid" id="om">
+  <div class="container">
+    <div class="section-label">Initiativtaker</div>
+    <h2>Hvorfor jeg bygger dette</h2>
+
+    <div class="about-block">
+      <div class="about-text">
+        <p class="about-lead">Jeg har brukt 10 år på å forstå hva som skaper stabil, langsiktig avkastning i eiendom. Svaret er alltid det samme: riktig leietaker, i riktig marked, med riktig struktur.</p>
+
+        <p>Helseboligmarkedet er det mest underpenetrerte segmentet i norsk næringseiendom. Mens institusjonelle investorer i Sverige og Danmark for lengst har allokert kapital til healthcare real estate, er det norske markedet fortsatt dominert av kommuner og ideelle organisasjoner — og det skaper en mulighet.</p>
+
+        <p>Min bakgrunn er i skjæringspunktet mellom eiendom, finans og operasjonell drift. Gjennom Varig Bolig AS har jeg utviklet deleie-modeller som gjør boligeierskap tilgjengelig for folk som faller mellom alle stoler. Det har lært meg én ting: de beste investeringene løser et reelt samfunnsproblem.</p>
+
+        <p>Helseboligmarkedet løser et slikt problem. Og det gjør det med en risikoprofil som få andre aktivaklasser kan matche.</p>
+
+        <div class="about-creds">
+          <div class="cred">
+            <strong>Eiendom & finans</strong>
+            <span>10+ år erfaring med transaksjon, strukturering og drift</span>
+          </div>
+          <div class="cred">
+            <strong>Varig Bolig AS</strong>
+            <span>Grunnlegger — deleie-modell for boliger i Norge</span>
+          </div>
+          <div class="cred">
+            <strong>Teknologi & AI</strong>
+            <span>NM i AI 2026 — top 15% av 3 100 deltakere</span>
+          </div>
+          <div class="cred">
+            <strong>Nettverk</strong>
+            <span>Aktiv i Gründervekst og norsk kapitalmarkedsmiljø</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-quote">
+        <blockquote>
+          "De beste investeringene løser et reelt samfunnsproblem — og helseboligmarkedet gjør nettopp det, med en risikoprofil få andre aktivaklasser kan matche."
+        </blockquote>
+        <div class="quote-attr">— David Myrann, initiativtaker Helseboliger</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROSESS -->
+<section class="section section-light" id="prosess">
+  <div class="container">
+    <div class="section-label">Investorprosess</div>
+    <h2>Fra første dialog til<br>signert tegningsavtale</h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <strong>Innledende dialog</strong>
+          <p>Vi tar en uformell samtale om investeringsmandat, størrelse og tidshorisont.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <strong>Investorpakke</strong>
+          <p>Du mottar komplett IM med finansmodell, leiekontrakt og due diligence-materiale.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <strong>Q&A og møte</strong>
+          <p>Vi gjennomgår prosjektet, svarer på spørsmål og diskuterer strukturen.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <strong>Tegningsavtale</strong>
+          <p>Signering og innbetaling. Du er med fra dag én.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section section-dark" id="kontakt">
+  <div class="container">
+    <div class="section-label light">Kom i gang</div>
+    <h2 class="light">Be om investorpakke</h2>
+    <p class="section-sub light">Fyll ut skjemaet, så sender vi komplett investormateriell innen 24 timer. Ingen forpliktelse.</p>
+
+    <div class="contact-block">
+      <form class="contact-form" id="investor-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Fullt navn *</label>
+            <input type="text" id="f-name" placeholder="Ola Nordmann" required>
+          </div>
+          <div class="form-group">
+            <label>Selskap / Fond</label>
+            <input type="text" id="f-company" placeholder="Nordmann Capital AS">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>E-post *</label>
+            <input type="email" id="f-email" placeholder="ola@eksempel.no" required>
+          </div>
+          <div class="form-group">
+            <label>Telefon</label>
+            <input type="tel" id="f-phone" placeholder="+47 900 00 000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Investeringskapasitet</label>
+          <select id="f-size">
+            <option value="">Velg størrelse</option>
+            <option>Under 500 000 kr</option>
+            <option>500 000 – 1 000 000 kr</option>
+            <option>1 000 000 – 5 000 000 kr</option>
+            <option>Over 5 000 000 kr</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Melding (valgfri)</label>
+          <textarea id="f-msg" rows="3" placeholder="Hva er ditt investeringsmandat?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="submit-btn">Send forespørsel →</button>
+        <div id="form-status"></div>
+      </form>
+
+      <div class="contact-info">
+        <div class="ci-block">
+          <strong>Direkte kontakt</strong>
+          <a href="mailto:david@myrann.com">david@myrann.com</a>
+        </div>
+        <div class="ci-block">
+          <strong>Telefon</strong>
+          <a href="tel:+4790000000">Ta kontakt via e-post for telefonnummer</a>
+        </div>
+        <div class="ci-divider"></div>
+        <div class="ci-block">
+          <strong>Konfidensialitet</strong>
+          <p>All informasjon behandles konfidensielt. Vi deler aldri opplysninger med tredjeparter uten eksplisitt samtykke.</p>
+        </div>
+        <div class="ci-block">
+          <strong>Responstid</strong>
+          <p>Du hører fra oss innen 24 timer på alle henvendelser.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">Helseboliger<span class="gold">.</span></div>
+    <div class="footer-links">
+      <a href="#markedet">Markedet</a>
+      <a href="#investering">Investeringen</a>
+      <a href="#leietaker">Leietaker</a>
+      <a href="#om">Om oss</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Helseboliger · Varig Bolig AS · Org.nr. under registrering</p>
+      <p class="disclaimer">Dette nettstedet er ikke et tilbud om verdipapirer. Historisk avkastning er ingen garanti for fremtidig avkastning. Investeringer i eiendom innebærer risiko.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  function toggleMenu() {
+    document.getElementById('nav-mobile').classList.toggle('open');
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  // Form submit
+  async function submitForm(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+    btn.disabled = true;
+    btn.textContent = 'Sender...';
+    const data = {
+      name:    document.getElementById('f-name').value,
+      company: document.getElementById('f-company').value,
+      email:   document.getElementById('f-email').value,
+      phone:   document.getElementById('f-phone').value,
+      size:    document.getElementById('f-size').value,
+      message: document.getElementById('f-msg').value
+    };
+    try {
+      const r = await fetch('/api/investor', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
+      if (r.ok) {
+        status.innerHTML = '<p class="form-success">✓ Takk! Vi sender deg investorpakken innen 24 timer.</p>';
+        document.getElementById('investor-form').reset();
+      } else {
+        throw new Error();
+      }
+    } catch {
+      status.innerHTML = '<p class="form-error">Noe gikk galt. Send e-post direkte til david@myrann.com</p>';
+    }
+    btn.disabled = false;
+    btn.textContent = 'Send forespørsel →';
+  }
+
+  // Intersection observer for animations
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.stat-card, .kpi-card, .step, .driver, .cred').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
