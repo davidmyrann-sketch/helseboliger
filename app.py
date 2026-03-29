@@ -13,9 +13,10 @@ app = Flask(__name__)
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data", "investors.json")
 os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 
-EMAIL_FROM = "heidimybot@gmail.com"
-EMAIL_PASS = "rdfsfbvwzbjahaia"
-EMAIL_TO   = "david@myrann.com"
+EMAIL_FROM     = "heidimybot@gmail.com"
+EMAIL_PASS     = "rdfsfbvwzbjahaia"
+EMAIL_TO_HF    = "david@myrann.com"           # Helseforetak-henvendelser
+EMAIL_TO_INV   = "master@goldenbusinessadvice.com"  # Investor-henvendelser
 
 def load_investors():
     if os.path.exists(DATA_FILE):
@@ -45,12 +46,12 @@ def send_notification(lead):
         msg = MIMEMultipart("alternative")
         msg["Subject"] = f"🏢 Ny investorhenvendelse fra {lead['name']} — Helseboliger"
         msg["From"]    = f"Helseboliger <{EMAIL_FROM}>"
-        msg["To"]      = EMAIL_TO
+        msg["To"]      = EMAIL_TO_INV
         msg.attach(MIMEText(body, "html", "utf-8"))
         with smtplib.SMTP("smtp.gmail.com", 587) as s:
             s.ehlo(); s.starttls()
             s.login(EMAIL_FROM, EMAIL_PASS)
-            s.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
+            s.sendmail(EMAIL_FROM, EMAIL_TO_INV, msg.as_string())
     except Exception as e:
         print(f"E-post feil: {e}")
 
@@ -93,12 +94,12 @@ def helseforetak():
         msg = MIMEMultipart("alternative")
         msg["Subject"] = f"🏥 Ny helseforetak-henvendelse fra {lead['name']} — Helseboliger"
         msg["From"]    = f"Helseboliger <{EMAIL_FROM}>"
-        msg["To"]      = EMAIL_TO
+        msg["To"]      = EMAIL_TO_HF
         msg.attach(MIMEText(body, "html", "utf-8"))
         with smtplib.SMTP("smtp.gmail.com", 587) as s:
             s.ehlo(); s.starttls()
             s.login(EMAIL_FROM, EMAIL_PASS)
-            s.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
+            s.sendmail(EMAIL_FROM, EMAIL_TO_HF, msg.as_string())
     except Exception as e:
         print(f"E-post feil: {e}")
     return jsonify({"ok": True})
