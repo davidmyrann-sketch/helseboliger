@@ -337,6 +337,7 @@
             <div style="display:flex;gap:12px;align-items:center;">
               <span style="font-size:20px;">✉️</span>
               <a href="mailto:david@helseboliger.no" style="color:#C9A84C;text-decoration:none;font-weight:600;">david@helseboliger.no</a>
+
             </div>
             <div style="display:flex;gap:12px;align-items:center;">
               <span style="font-size:20px;">🔒</span>
@@ -716,7 +717,7 @@
         document.getElementById('hf-form').reset();
       } else throw new Error();
     } catch {
-      status.innerHTML = '<p class="form-error">Noe gikk galt. Send e-post til david@helseboliger.no</p>';
+      status.innerHTML = '<p class="form-error">Noe gikk galt. Send e-post til <a href="mailto:david@helseboliger.no">david@helseboliger.no</a></p>';
     }
     btn.disabled = false; btn.textContent = 'Send forespørsel →';
   }

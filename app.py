@@ -15,7 +15,7 @@ os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 
 EMAIL_FROM     = "heidimybot@gmail.com"
 EMAIL_PASS     = "rdfsfbvwzbjahaia"
-EMAIL_TO_HF    = "david@myrann.com"           # Helseforetak-henvendelser
+EMAIL_TO_HF    = "david@helseboliger.no"       # Helseforetak-henvendelser
 EMAIL_TO_INV   = "master@goldenbusinessadvice.com"  # Investor-henvendelser
 
 def load_investors():
