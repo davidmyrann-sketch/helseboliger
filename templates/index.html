@@ -128,16 +128,8 @@
     /* shared section label override for investor tab */
     .inv-section-label { font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#C9A84C; margin-bottom:12px; }
 
-    /* Contact form for HF tab */
-    .hf-form { background:white; border-radius:14px; padding:36px; box-shadow:0 2px 20px rgba(0,0,0,0.08); max-width:560px; }
-    .hf-form .form-group { margin-bottom:18px; }
-    .hf-form label { display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:6px; }
-    .hf-form input, .hf-form select, .hf-form textarea {
-      width:100%; padding:11px 14px; border:1.5px solid #ddd; border-radius:8px; font-size:14px; font-family:'Inter',sans-serif; outline:none; transition:border 0.2s;
-    }
-    .hf-form input:focus, .hf-form select:focus, .hf-form textarea:focus { border-color:#0f2d4a; }
-    .hf-form .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-    @media(max-width:540px){ .hf-form .form-row { grid-template-columns:1fr; } }
+    .mailto-btn { display:inline-block; background:#C9A84C; color:#0f2d4a; font-weight:700; font-size:16px; padding:15px 36px; border-radius:999px; text-decoration:none; transition:background 0.2s; }
+    .mailto-btn:hover { background:#e0c070; }
 
     @media(max-width:540px){
       .tab-btn { padding:14px 20px; font-size:13px; }
@@ -325,69 +317,14 @@
 
   <!-- KONTAKT HF -->
   <div class="hf-section teal" id="hf-kontakt">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;" class="hf-contact-grid">
-        <div>
-          <div class="inv-section-label" style="color:#C9A84C;">Kontakt oss</div>
-          <h2 class="light" style="color:white;">Fortell oss om ditt behov</h2>
-          <p style="color:rgba(255,255,255,0.7);font-size:16px;line-height:1.7;margin-bottom:24px;">
-            Vi setter pris på en uformell samtale om ditt lokalebehov. Fyll ut skjemaet, så tar vi kontakt innen én arbeidsdag.
-          </p>
-          <div style="display:flex;flex-direction:column;gap:16px;">
-            <div style="display:flex;gap:12px;align-items:center;">
-              <span style="font-size:20px;">✉️</span>
-              <a href="mailto:david@helseboliger.no" style="color:#C9A84C;text-decoration:none;font-weight:600;">david@helseboliger.no</a>
-
-            </div>
-            <div style="display:flex;gap:12px;align-items:center;">
-              <span style="font-size:20px;">🔒</span>
-              <span style="color:rgba(255,255,255,0.6);font-size:14px;">All informasjon behandles konfidensielt.</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="hf-form">
-            <form id="hf-form" onsubmit="submitHF(event)">
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Fullt navn *</label>
-                  <input type="text" id="hf-name" required placeholder="Kari Nordmann">
-                </div>
-                <div class="form-group">
-                  <label>Organisasjon</label>
-                  <input type="text" id="hf-org" placeholder="Helse AS">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label>E-post *</label>
-                  <input type="email" id="hf-email" required placeholder="kari@helse.no">
-                </div>
-                <div class="form-group">
-                  <label>Telefon</label>
-                  <input type="tel" id="hf-phone" placeholder="+47 900 00 000">
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Hva er behovet?</label>
-                <select id="hf-behov">
-                  <option value="">Velg type</option>
-                  <option>Nybygg — tilpassede lokaler</option>
-                  <option>Eksisterende bygg — ombygging</option>
-                  <option>Leie eksisterende helsebygg</option>
-                  <option>Annet / vet ikke ennå</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Beskriv situasjonen (valgfri)</label>
-                <textarea id="hf-msg" rows="3" placeholder="Areal, lokalisering, tidslinje, antall brukere…"></textarea>
-              </div>
-              <button type="submit" class="btn-primary btn-full" id="hf-submit">Send forespørsel →</button>
-              <div id="hf-status" style="margin-top:12px;"></div>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div class="container" style="text-align:center;">
+      <div class="inv-section-label" style="color:#C9A84C;">Kontakt oss</div>
+      <h2 class="light" style="color:white;">Fortell oss om ditt behov</h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:16px;line-height:1.7;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto;">
+        Vi setter pris på en uformell samtale om ditt lokalebehov. Send oss en e-post, så tar vi kontakt innen én arbeidsdag.
+      </p>
+      <a href="mailto:master@goldenbusinessadvice.com" class="mailto-btn">Send oss en e-post →</a>
+      <p style="color:rgba(255,255,255,0.45);font-size:13px;margin-top:20px;">🔒 All informasjon behandles konfidensielt.</p>
     </div>
   </div>
 
@@ -609,42 +546,13 @@
   </section>
 
   <!-- KONTAKT INVESTOR -->
-  <section class="section section-dark" id="kontakt">
+  <section class="section section-dark" id="kontakt" style="text-align:center;">
     <div class="container">
       <div class="section-label light">Kom i gang</div>
       <h2 class="light">Be om investorpakke</h2>
-      <p class="section-sub light">Fyll ut skjemaet, så sender vi komplett investormateriell innen 24 timer. Ingen forpliktelse.</p>
-      <div class="contact-block">
-        <form class="contact-form" id="investor-form" onsubmit="submitInvestor(event)">
-          <div class="form-row">
-            <div class="form-group"><label>Fullt navn *</label><input type="text" id="f-name" placeholder="Ola Nordmann" required></div>
-            <div class="form-group"><label>Selskap / Fond</label><input type="text" id="f-company" placeholder="Nordmann Capital AS"></div>
-          </div>
-          <div class="form-row">
-            <div class="form-group"><label>E-post *</label><input type="email" id="f-email" placeholder="ola@eksempel.no" required></div>
-            <div class="form-group"><label>Telefon</label><input type="tel" id="f-phone" placeholder="+47 900 00 000"></div>
-          </div>
-          <div class="form-group">
-            <label>Investeringskapasitet</label>
-            <select id="f-size">
-              <option value="">Velg størrelse</option>
-              <option>Under 500 000 kr</option>
-              <option>500 000 – 1 000 000 kr</option>
-              <option>1 000 000 – 5 000 000 kr</option>
-              <option>Over 5 000 000 kr</option>
-            </select>
-          </div>
-          <div class="form-group"><label>Melding (valgfri)</label><textarea id="f-msg" rows="3" placeholder="Hva er ditt investeringsmandat?"></textarea></div>
-          <button type="submit" class="btn-primary btn-full" id="submit-btn">Send forespørsel →</button>
-          <div id="form-status"></div>
-        </form>
-        <div class="contact-info">
-          <div class="ci-block"><strong>Direkte kontakt</strong><a href="mailto:david@myrann.com">david@myrann.com</a></div>
-          <div class="ci-divider"></div>
-          <div class="ci-block"><strong>Konfidensialitet</strong><p>All informasjon behandles konfidensielt.</p></div>
-          <div class="ci-block"><strong>Responstid</strong><p>Du hører fra oss innen 24 timer.</p></div>
-        </div>
-      </div>
+      <p class="section-sub light" style="max-width:520px;margin-left:auto;margin-right:auto;">Send oss en e-post, så sender vi komplett investormateriell innen 24 timer. Ingen forpliktelse.</p>
+      <a href="mailto:master@goldenbusinessadvice.com" class="mailto-btn">Send oss en e-post →</a>
+      <p style="color:rgba(255,255,255,0.4);font-size:13px;margin-top:20px;">🔒 All informasjon behandles konfidensielt · Responstid innen 24 timer</p>
     </div>
   </section>
 
@@ -657,7 +565,7 @@
     <div class="footer-links">
       <a href="#" onclick="switchTab('helseforetak');return false">Helseforetak</a>
       <a href="#" onclick="switchTab('investorer');return false">Investorer</a>
-      <a href="mailto:david@myrann.com">Kontakt</a>
+      <a href="mailto:master@goldenbusinessadvice.com">Kontakt</a>
     </div>
     <div class="footer-legal">
       <p>© 2026 Helseboliger · Varig Bolig AS</p>
@@ -696,56 +604,6 @@
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
-
-  async function submitHF(e) {
-    e.preventDefault();
-    const btn = document.getElementById('hf-submit');
-    const status = document.getElementById('hf-status');
-    btn.disabled = true; btn.textContent = 'Sender...';
-    const data = {
-      name: document.getElementById('hf-name').value,
-      org:  document.getElementById('hf-org').value,
-      email: document.getElementById('hf-email').value,
-      phone: document.getElementById('hf-phone').value,
-      behov: document.getElementById('hf-behov').value,
-      message: document.getElementById('hf-msg').value
-    };
-    try {
-      const r = await fetch('/api/helseforetak', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
-      if (r.ok) {
-        status.innerHTML = '<p class="form-success">✓ Takk! Vi tar kontakt innen én arbeidsdag.</p>';
-        document.getElementById('hf-form').reset();
-      } else throw new Error();
-    } catch {
-      status.innerHTML = '<p class="form-error">Noe gikk galt. Send e-post til <a href="mailto:david@helseboliger.no">david@helseboliger.no</a></p>';
-    }
-    btn.disabled = false; btn.textContent = 'Send forespørsel →';
-  }
-
-  async function submitInvestor(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submit-btn');
-    const status = document.getElementById('form-status');
-    btn.disabled = true; btn.textContent = 'Sender...';
-    const data = {
-      name:    document.getElementById('f-name').value,
-      company: document.getElementById('f-company').value,
-      email:   document.getElementById('f-email').value,
-      phone:   document.getElementById('f-phone').value,
-      size:    document.getElementById('f-size').value,
-      message: document.getElementById('f-msg').value
-    };
-    try {
-      const r = await fetch('/api/investor', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
-      if (r.ok) {
-        status.innerHTML = '<p class="form-success">✓ Takk! Vi sender investorpakken innen 24 timer.</p>';
-        document.getElementById('investor-form').reset();
-      } else throw new Error();
-    } catch {
-      status.innerHTML = '<p class="form-error">Noe gikk galt. Send e-post direkte til david@myrann.com</p>';
-    }
-    btn.disabled = false; btn.textContent = 'Send forespørsel →';
-  }
 
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
